@@ -622,23 +622,25 @@ color:#ff895d
 @media (min-width: 330px) and (max-width: 430px) {
   .navbar{
     display:flex;
-     width:100;
-    background-color:black;
-      position:fixed;
-    z-index:5;
-    border:solid #151515;
+    align-items: center;
+    justify-content: center;
+    width:100;
+   background-color:black;
+     position:fixed;
+   z-index:5;
+   border:none;
     }
     .nav { 
-    padding:10px;
+    padding:9px;
     display:flex;
-    gap:5px; 
+    gap:16px; 
     }
     
     .nav a{ 
     text-decoration:none;
-    padding:8px;
+    padding:10px 0;
     font:800 11px Poppins;
-    line-height:10px;
+    
     text-transform:uppercase;
     color:grey;
     letter-spacing:1.5px;
@@ -705,6 +707,7 @@ color:#ff895d
 
 .qou h1{
   font-size:12px;
+  text-align:center;
 }
 .qouk{
   text-align:center;
