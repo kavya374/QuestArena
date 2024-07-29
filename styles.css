@@ -629,11 +629,13 @@ color:#ff895d
     gap:3px; 
     align-items: center;
     justify-content: center;
+    margin:auto;
+    border:solid red;
     }
     
     .nav a{ 
     text-decoration:none;
-    padding:5px;
+    padding:15px;
     font:800 10px Poppins;
     line-height:10px;
     text-transform:uppercase;
@@ -658,7 +660,7 @@ color:#ff895d
 }
 .mermaid{
   position:absolute;
-  bottom:460px !important;
+  top:100px !important;
   width:155px;
 }
 .fronttitle{
