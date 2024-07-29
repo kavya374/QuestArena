@@ -620,23 +620,24 @@ color:#ff895d
 
 
 @media (min-width: 330px) and (max-width: 430px) {
-  .nav a{
-    font-size:10px;
-  }
-    
-    .nav { 
+  .navbar{
     display:flex;
-    gap:3px; 
-    align-items: center;
-    justify-content: center;
-    margin:auto;
-    border:solid red;
+     width:100;
+    background-color:black;
+      position:fixed;
+    z-index:5;
+    border:solid #151515;
+    }
+    .nav { 
+    padding:10px;
+    display:flex;
+    gap:5px; 
     }
     
     .nav a{ 
     text-decoration:none;
-    padding:15px;
-    font:800 10px Poppins;
+    padding:8px;
+    font:800 11px Poppins;
     line-height:10px;
     text-transform:uppercase;
     color:grey;
@@ -646,10 +647,11 @@ color:#ff895d
     }
     .nav a:hover{
     color:lightgrey;
-    font-size:11px;
+    font-size:13px;
     }
 .abt{
   text-align:justify;
+  padding:40px 35px;
 }
 .navbar img{
   display:none;
@@ -778,11 +780,13 @@ color:#ff895d
     }
 .abt{
   text-align:justify;
+  padding:40px 35px;
 }
 .navbar img{
   display:none;
 }
     
+
 #wi{
   display:none;
 }
