@@ -86,7 +86,7 @@ margin-left:-65px;
 height:300px; 
 margin-top:40px;
 }
-.undertitle p{
+.undertitle a{
 width:270px;
 background-color:black;
 opacity:0.6;
@@ -101,7 +101,7 @@ padding:3px 13px;
 border: 1px solid grey;
 border-radius:5px;
 }
-.undertitle p:hover{
+.undertitle a:hover{
 color:white;
 cursor:pointer;
 }
@@ -619,7 +619,7 @@ color:#ff895d
 }
 
 
-@media (min-width: 330px) and (max-width: 430px) {
+@media (min-width: 330px) and (max-width: 374px) {
   .navbar{
     display:flex;
     align-items: center;
@@ -727,16 +727,18 @@ color:#ff895d
   }
   
   .msgban{
-   width: fit-content;
+   width: 270px;
   padding:10px;
   display:flex;
   gap:30px; 
   margin:auto;
    overflow-x: scroll;
+   scroll-snap-type: x mandatory;
   overflow-y: none;
   }
   .msgcontainer {
-  min-width: 315px;
+    scroll-snap-align: center;
+  min-width: 270px;
   background-color: black;
   color: #222222;
   background: rgba(37, 37, 37, 0.52);
@@ -746,12 +748,17 @@ color:#ff895d
   -webkit-backdrop-filter: blur(2.2px);
   border: 1px solid rgba(37, 37, 37, 0.27);
   }
-  
+  .allmsg h1{
+    font-size:28px;
+  }
+  .msg{
+font-size: 12px;
+  }
   .allmsg {
     padding: 30px 5px;
   }
   .abt div, .abt{
-    font-size:11px;
+    font-size:10px;
   }
 }
 
@@ -838,6 +845,19 @@ color:#ff895d
 }
 .qouk{
   text-align:center;
+}
+.msgban{
+  width: 500px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+ overflow-y: none;
+ }
+ .msgcontainer {
+   scroll-snap-align: center;
+ min-width: 300px;
+ }
+ .allmsg {
+  padding: 30px 5px;
 }
 .abt div, .abt{
   font-size:11px;
